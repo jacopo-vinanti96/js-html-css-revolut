@@ -26,3 +26,15 @@ dropdownLabels.click( function () {
     nextElem.toggleClass( 'clicked' );
   }
 });
+
+// dropdownLabels.mouseenter( function () {
+//   var nextElem = $( this ).next();
+//   nextElem.toggleClass( 'active' );
+// });
+//
+// dropdownLabels.mouseleave( function () {
+//   var nextElem = $( this ).next();
+//   if ( clicked == false ) {
+//     nextElem.toggleClass( 'active' );
+//   }
+// });

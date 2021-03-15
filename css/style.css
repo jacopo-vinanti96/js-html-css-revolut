@@ -33,6 +33,10 @@
   margin-right: 30px;
 }
 
+.dropdown-label:hover ~ .dropdown-list {
+  display: block;
+}
+
 .dropdown-list {
   width: max-content;
   position: absolute;
