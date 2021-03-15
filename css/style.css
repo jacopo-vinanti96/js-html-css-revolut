@@ -39,3 +39,11 @@
   padding: 10px;
   display: none;
 }
+
+.dropdown-list > ul {
+  list-style: none;
+}
+
+.active {
+  display: block;
+}

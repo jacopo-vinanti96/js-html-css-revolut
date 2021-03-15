@@ -1,5 +1,14 @@
-var dropdownLabel = $('.dropdown-label');
+var dropdownLabels = $( '.dropdown-label' ),
+    dropdownLists = $('.dropdown-list')
+    documentHTML = $('');
 
-dropdownLabel.click( function () {
-  $(this).next().toggle('slow');
+// documentHTML.click( function () {
+//   if ( dropdownLabels.hasClass( 'active' ) == true ) {
+//     dropdownLists.removeClass( 'active' );
+//   }
+// });
+
+dropdownLabels.click( function () {
+  var nextElem = $( this ).next();
+  nextElem.toggleClass( 'active' );
 });
