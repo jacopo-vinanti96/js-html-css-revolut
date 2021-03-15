@@ -1,16 +1,8 @@
 var dropdownContainer = $(".dropdown-container")
     dropdownLabels = $( '.dropdown-label' ),
     dropdownLists = $('.dropdown-list'),
-    documentHTML = $(''),
+    headerContainer = $('.header__container'),
     clicked = false;
-
-// documentHTML.click( function () {
-//   if ( clicked == false ) {
-//     dropdownLists.removeClass( 'active' );
-//   } else {
-//     clicked = false;
-//   }
-// });
 
 dropdownLabels.click( function () {
   var nextElem = $( this ).next();
@@ -42,4 +34,14 @@ dropdownContainer.mouseleave( function () {
       $( this ).addClass('active');
     }
   });
+});
+
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+
+    if(height > 0) {
+        headerContainer.addClass('box-shadow');
+    } else if ( height == 0 ) {
+      headerContainer.removeClass('box-shadow');
+    }
 });
