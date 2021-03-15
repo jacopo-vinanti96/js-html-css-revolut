@@ -1,4 +1,5 @@
-var dropdownLabels = $( '.dropdown-label' ),
+var dropdownContainer = $(".dropdown-container")
+    dropdownLabels = $( '.dropdown-label' ),
     dropdownLists = $('.dropdown-list'),
     documentHTML = $(''),
     clicked = false;
@@ -27,7 +28,7 @@ dropdownLabels.click( function () {
   }
 });
 
-dropdownLabels.mouseenter( function () {
+dropdownContainer.mouseenter( function () {
   dropdownLists.each( function () {
     if ( $( this ).hasClass( 'clicked' ) ) {
       $( this ).removeClass('active');
@@ -35,7 +36,7 @@ dropdownLabels.mouseenter( function () {
   });
 });
 
-dropdownLabels.mouseleave( function () {
+dropdownContainer.mouseleave( function () {
   dropdownLists.each( function () {
     if ( $( this ).hasClass( 'clicked' ) ) {
       $( this ).addClass('active');

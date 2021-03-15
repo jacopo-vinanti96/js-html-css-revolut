@@ -11,7 +11,7 @@
 }
 
 /*-------Mix-------*/
-.position-raltive {
+.position-relative {
   position: relative;
 }
 
@@ -33,7 +33,11 @@
   margin-right: 30px;
 }
 
-.dropdown-label:hover ~ .dropdown-list {
+.dropdown-container {
+  padding: 10px 0;
+}
+
+.dropdown-container:hover .dropdown-list {
   display: block;
 }
 
@@ -41,7 +45,10 @@
   width: max-content;
   position: absolute;
   padding: 10px;
+  left: -10px;
+  top: 100%;
   display: none;
+  border: 1px solid black;
 }
 
 .dropdown-list > ul {
