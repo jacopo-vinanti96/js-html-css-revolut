@@ -27,14 +27,18 @@ dropdownLabels.click( function () {
   }
 });
 
-// dropdownLabels.mouseenter( function () {
-//   var nextElem = $( this ).next();
-//   nextElem.toggleClass( 'active' );
-// });
-//
-// dropdownLabels.mouseleave( function () {
-//   var nextElem = $( this ).next();
-//   if ( clicked == false ) {
-//     nextElem.toggleClass( 'active' );
-//   }
-// });
+dropdownLabels.mouseenter( function () {
+  dropdownLists.each( function () {
+    if ( $( this ).hasClass( 'clicked' ) ) {
+      $( this ).removeClass('active');
+    }
+  });
+});
+
+dropdownLabels.mouseleave( function () {
+  dropdownLists.each( function () {
+    if ( $( this ).hasClass( 'clicked' ) ) {
+      $( this ).addClass('active');
+    }
+  });
+});
