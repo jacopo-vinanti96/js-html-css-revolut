@@ -10,6 +10,11 @@
   text-decoration: none;
 }
 
+/*-------Mix-------*/
+.position-raltive {
+  position: relative;
+}
+
 /*-------BODY-------*/
 /*-------Header-------*/
 .header__container {
@@ -21,8 +26,16 @@
 .header__nav__list {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
-.header__nav__list > li:not(:last-child) {
+.header__nav__list > li:not(:last-child){
   margin-right: 30px;
+}
+
+.dropdown-list {
+  width: max-content;
+  position: absolute;
+  padding: 10px;
+  display: none;
 }
