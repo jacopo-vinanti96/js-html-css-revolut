@@ -3,6 +3,7 @@ var dropdownContainer = $(".dropdown-container")
     dropdownLists = $('.dropdown-list'),
     headerContainer = $('.header__container');
 
+
 dropdownLabels.click( function () {
   var nextElem = $( this ).next();
   nextElem.addClass( 'active' );
@@ -18,6 +19,17 @@ dropdownLabels.click( function () {
     nextElem.toggleClass( 'clicked' );
   }
 });
+
+//// Se si clicca sul html il menù scompare
+// $('html').on( 'click', function() {
+//   if ( $('.clicked').length == 1 ) {
+//     $('html').on( 'click', function() {
+//       dropdownLists.removeClass('active');
+//       dropdownLists.removeClass('clicked');
+//     });
+//   }
+//   $('html').off( 'click' );
+// });
 
 dropdownContainer.mouseenter( function () {
   dropdownLists.each( function () {
