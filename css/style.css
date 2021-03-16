@@ -60,6 +60,10 @@
   align-items: center;
 }
 
+.dropdown-container {
+  cursor: pointer;
+}
+
 .dropdown-container,
 .header__nav__list > li > a {
   padding: 10px 15px;
@@ -69,9 +73,9 @@
   margin-right: 40px;
 }
 
-.dropdown-container:hover .dropdown-list {
+/* .dropdown-container:hover .dropdown-list {
   display: block;
-}
+} */
 
 .dropdown-list {
   width: 150px;
